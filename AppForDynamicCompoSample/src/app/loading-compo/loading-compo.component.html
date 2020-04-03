@@ -1,0 +1,25 @@
+<h1>Dynamic Component Loading</h1>
+
+<p>Component templates are not always fixed. An application may need to load new components at runtime.</p>
+<p>So here is an example of loading components dynamically</p>
+
+<div>
+
+<label>Click on this to load Component 1</label>
+<input type="button" value="Component1" (click)="showCompo('compo1')" style="margin: 80px;"/>
+
+<label style="margin: 130PX; text-decoration-color: midnightblueS;">OR</label>
+
+<label>Click on this to load Component 2</label>
+<input type="button" value="Component2" (click)="showCompo('compo2')" style="margin: 80px;"/>
+
+
+</div>
+
+
+
+<div>
+
+<ng-template appHost></ng-template>
+
+</div>
